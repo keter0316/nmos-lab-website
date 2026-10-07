@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kachaka Pro｜設備資源｜微奈米光學系統研究室</title>
+  <link rel="stylesheet" href="nmos-layout.css?v=20260707-5">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <script>if("scrollRestoration" in history){history.scrollRestoration="manual";}window.scrollTo(0,0);</script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><strong>NMOS Lab</strong><span>微奈米光學系統研究室</span></a>
+      <nav class="side-nav">
+        <a href="index.html">首頁</a>
+        <a href="research.html">研究方向</a>
+        <a class="active" href="equipment.html">設備資源</a>
+        <a href="professor.html">指導教授</a>
+        <a href="publications.html">研究成果</a>
+        <a href="members.html">團隊成員</a>
+        <a href="activities.html">活動剪影</a>
+        <a href="contact.html">聯絡資訊</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="https://academic.ntut.edu.tw" target="_blank" rel="noopener">北科學術資源網</a>
+        <a href="https://www.ntut.edu.tw" target="_blank" rel="noopener">國立臺北科技大學</a>
+      </div>
+    </aside>
+
+    <main class="page">
+      <header class="page-header">
+        <p class="page-kicker"><a href="equipment.html">Facilities</a> / Kachaka Pro</p>
+        <h1>Kachaka Pro</h1>
+        <p class="page-lead">室內自主移動、搬運、SLAM 建圖、RViz2 可視化與 Isaac Sim 虛擬場景重建平台。</p>
+      </header>
+
+      <section class="section">
+        <div class="equipment-hero-block">
+          <div class="equipment-hero-copy">
+            <p class="section-kicker">Mobile Robot Platform</p>
+            <h2>Kachaka Pro 智慧移動與虛實整合平台</h2>
+            <p>Kachaka Pro 是實驗室可用於室內自主移動、搬運、SLAM 地圖建立、RViz2 可視化與 Isaac Sim 場景重建的 AMR 平台。此設備定位為研究與開發資源，可支援 AI、機器人導航、環境感知與數位孿生相關研究。</p>
+            <div class="equipment-tag-row" aria-label="Kachaka Pro 研究能力">
+              <span>Indoor AMR</span>
+              <span>SLAM</span>
+              <span>ROS2 / RViz2</span>
+              <span>Isaac Sim</span>
+            </div>
+          </div>
+          <figure class="equipment-hero-image">
+            <img src="assets/media/media-005.png" width="972" height="560" alt="Kachaka Pro 搭配貨架與搬運裝載示意">
+            <figcaption>可搭配貨架與裝載平台，支援室內搬運與任務流程測試。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="equipment-detail-grid">
+          <div>
+            <p class="section-kicker">Hardware</p>
+            <h2>硬體與感測器配置</h2>
+            <p>Kachaka Pro 具備影像、距離與深度感測能力，可支援定位、避障、搬運與環境感知。產品背景可參考 Zeonic 介紹，其特色包含 SLAM 定位、窄道通行、客製化貨架、API 串接與多機管理等能力。</p>
+            <div class="equipment-capabilities">
+              <article><strong>相機感測</strong><span>前後相機可取得環境影像，支援辨識與場景觀察。</span></article>
+              <article><strong>距離感測</strong><span>2D LiDAR 與雷射感測器可協助障礙物距離判斷。</span></article>
+              <article><strong>深度感測</strong><span>3D / ToF 感測可補足前方空間深度資訊。</span></article>
+              <article><strong>系統整合</strong><span>可與 ROS2、RViz2、Isaac Sim 連結，建立虛實對照流程。</span></article>
+            </div>
+          </div>
+          <figure class="media-frame contain equipment-diagram">
+            <img src="assets/media/media-003.png" width="1067" height="514" alt="Kachaka Pro 感測器配置示意" loading="lazy">
+            <figcaption>感測器配置示意</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Digital Twin</p>
+          <h2>現實場景與虛擬場景對比</h2>
+          <p>將真實室內場域重建至 Isaac Sim，讓機器人定位、地圖、障礙物與任務路徑可以在 3D 虛擬空間中對照，形成數位孿生展示基礎。</p>
+        </div>
+        <div class="comparison-grid">
+          <figure class="comparison-card">
+            <img src="assets/media/media-002.jpg" width="1125" height="631" alt="Kachaka Pro 測試用真實室內場景" loading="lazy">
+            <figcaption><span>Reality</span> 現實場景</figcaption>
+          </figure>
+          <figure class="comparison-card">
+            <img src="assets/media/media-004.jpg" width="1112" height="591" alt="Isaac Sim 重建的 3D 虛擬場景" loading="lazy">
+            <figcaption><span>Simulation</span> Isaac Sim 虛擬場景</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-heading">
+          <p class="section-kicker">Workflow</p>
+          <h2>虛實整合流程</h2>
+        </div>
+        <div class="equipment-flow">
+          <article><span>01</span><h3>感測與建圖</h3><p>於真實場域收集環境資訊，建立機器人可用地圖。</p></article>
+          <article><span>02</span><h3>RViz2 可視化</h3><p>觀察位置、地圖、感測資訊與導航狀態。</p></article>
+          <article><span>03</span><h3>Isaac Sim 重建</h3><p>依照家具、牆面與空間比例建立 3D 場景。</p></article>
+          <article><span>04</span><h3>實機流程驗證</h3><p>以實體 Kachaka Pro 進行搬運與導航流程展示。</p></article>
+        </div>
+      </section>
+
+      <section class="section demo-section">
+        <div class="section-heading">
+          <p class="section-kicker">Demo</p>
+          <h2>操作展示</h2>
+          <p>透過影片呈現 Kachaka Pro 在實際場域中的移動、搬運或平台測試流程。</p>
+        </div>
+        <figure class="demo-video-frame">
+          <video controls preload="metadata">
+            <source src="assets/video/video-001.mp4" type="video/mp4">
+            您的瀏覽器不支援影片播放。
+          </video>
+          <figcaption>Kachaka Pro 操作展示</figcaption>
+        </figure>
+      </section>
+
+      <footer class="lab-footer">
+        <div>
+          <h2>微奈米光學系統研究室</h2>
+          <p>Nano-photonic and Micro-Optical System Lab.</p>
+          <p>綜科館 B09-1 室 / TEL: (02) 2771-2171 #4382 / shihwen@ntut.edu.tw</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="nmos-page.js?v=20260707-5"></script>
+</body>
+</html>
